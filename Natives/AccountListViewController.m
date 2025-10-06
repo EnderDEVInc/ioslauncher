@@ -67,7 +67,7 @@
     if ([selected[@"username"] hasPrefix:@"Demo."]) {
         // Remove the prefix "Demo."
         cell.textLabel.text = [selected[@"username"] substringFromIndex:5];
-        cell.detailTextLabel.text = localize(@"login.option.demo", nil);
+        cell.detailTextLabel.text = selected[@"xboxGamertag"]
     } else if (selected[@"xboxGamertag"] == nil) {
         cell.detailTextLabel.text = localize(@"login.option.local", nil);
     } else {
